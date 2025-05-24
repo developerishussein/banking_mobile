@@ -1,3 +1,5 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class Myappbar extends StatelessWidget implements PreferredSizeWidget {
@@ -5,6 +7,17 @@ class Myappbar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Size get preferredSize => const Size.fromHeight(kToolbarHeight);
+
+  Future<String?> _getUserName() async {
+    final uid = FirebaseAuth.instance.currentUser?.uid;
+    if (uid == null) return null;
+
+    final doc = await FirebaseFirestore.instance.collection('users').doc(uid).get();
+    if (doc.exists) {
+      return doc.data()?['fullname'] ?? 'User';
+    }
+    return null;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -21,18 +34,43 @@ class Myappbar extends StatelessWidget implements PreferredSizeWidget {
           const SizedBox(width: 10),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: const [
-              Text(
+            children: [
+              const Text(
                 'Welcome back,',
                 style: TextStyle(fontSize: 12, color: Colors.white70),
               ),
-              Text(
-                'Tanya Myroniuk',
-                style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
+              FutureBuilder<String?>(
+                future: _getUserName(),
+                builder: (context, snapshot) {
+                  if (snapshot.connectionState == ConnectionState.waiting) {
+                    return const Text(
+                      'Loading...',
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    );
+                  } else if (snapshot.hasError) {
+                    return const Text(
+                      'Error',
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.redAccent,
+                      ),
+                    );
+                  } else {
+                    return Text(
+                      snapshot.data ?? 'User',
+                      style: const TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    );
+                  }
+                },
               ),
             ],
           ),
@@ -41,10 +79,9 @@ class Myappbar extends StatelessWidget implements PreferredSizeWidget {
       actions: [
         Container(
           decoration: BoxDecoration(
-            color: Color(0xff1E1E2D),
+            color: const Color(0xff1E1E2D),
             borderRadius: BorderRadius.circular(400),
           ),
-
           child: IconButton(
             icon: const Icon(Icons.search, color: Colors.white),
             onPressed: () {},

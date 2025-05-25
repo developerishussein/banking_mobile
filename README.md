@@ -1,17 +1,35 @@
-# banking_mobile
+# 💳 Banking Mobile App
 
-A new Flutter project.
+![Design Preview](https://github.com/developerishussein/banking_mobile/blob/main/filecover.png)
 
-## Getting Started
+تطبيق بنكي متكامل بُني باستخدام Flutter وFirebase لتقديم تجربة استخدام سلسة وآمنة لإدارة البطاقات البنكية وتحويل الأموال.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 🚀 الميزات
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- تسجيل دخول آمن باستخدام Firebase Authentication
+- عرض البطاقات البنكية بطريقة جذابة باستخدام `flutter_credit_card`
+- إرسال وطلب الأموال بسهولة
+- تخزين بيانات المستخدمين والمعاملات باستخدام Firebase Firestore
+- واجهة مستخدم أنيقة وسهلة الاستخدام
+- دعم إدارة الحالة باستخدام GetX
+- تنظيم الكود بطريقة Modular Architecture
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-"# banking_mobile" 
+---
+
+## 🛠️ التقنيات المستخدمة
+
+| التقنية | الاستخدام |
+|---------|-----------|
+| Flutter | بناء الواجهة |
+| GetX | إدارة الحالة والتنقل |
+| Firebase Auth | تسجيل الدخول والتوثيق |
+| Firebase Firestore | تخزين البيانات |
+| flutter_credit_card | عرض نموذج البطاقة |
+| Google Fonts | تحسين الخطوط |
+
+---
+
+## 📦 هيكل المشروع
+

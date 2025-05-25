@@ -8,6 +8,7 @@ class FromEmail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      style: TextStyle(color: Colors.white),
       controller: emailController,
       validator: (value) {
         if (value == null || value.isEmpty) {

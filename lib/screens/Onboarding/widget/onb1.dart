@@ -12,11 +12,19 @@ class Onb1 extends StatelessWidget {
         Image.asset('assets/Onboarding/Group1.png'),
         Text(
           'Fastest Payment in\n the world',
-          style: TextStyle(fontSize: 26, fontWeight: FontWeight.w800),
+          style: TextStyle(
+            fontSize: 26,
+            fontWeight: FontWeight.w800,
+            color: Colors.white,
+          ),
         ),
         Text(
           'Integrate multiple payment methoods\nto help you up the process quickly',
-          style: TextStyle(fontSize: 14, fontWeight: FontWeight.w800),
+          style: TextStyle(
+            fontSize: 14,
+            fontWeight: FontWeight.w800,
+            color: Colors.white,
+          ),
         ),
       ],
     );

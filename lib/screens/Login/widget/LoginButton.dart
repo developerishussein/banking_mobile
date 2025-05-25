@@ -45,7 +45,7 @@ class Loginbotton extends StatelessWidget {
               ScaffoldMessenger.of(
                 context,
               ).showSnackBar(SnackBar(content: Text('تم تسجيل الدخول بنجاح')));
-              Get.offAllNamed(AppRoutes.homePage);
+              Get.offAllNamed(AppRoutes.mynv);
               // يمكنك أيضًا التوجيه إلى صفحة أخرى هنا
             } on FirebaseAuthException catch (e) {
               // ⚠️ التعامل مع أخطاء تسجيل الدخول
@@ -68,7 +68,7 @@ class Loginbotton extends StatelessWidget {
         child: const Text(
           'Get Started',
           style: TextStyle(
-            fontSize: 26,
+            fontSize: 18,
             fontWeight: FontWeight.w800,
             color: Colors.white,
           ),

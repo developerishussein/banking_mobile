@@ -36,13 +36,13 @@ class Mybotton extends StatelessWidget {
               curve: Curves.linear,
             );
           } else {
-            Get.toNamed(AppRoutes.login);
+            Get.offAllNamed(AppRoutes.login);
           }
         },
         child: Text(
           index < 2 ? 'Next' : 'Get Started',
           style: TextStyle(
-            fontSize: 26,
+            fontSize: 18,
             fontWeight: FontWeight.w800,
             color: Colors.white,
           ),

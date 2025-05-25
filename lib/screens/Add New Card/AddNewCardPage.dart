@@ -41,13 +41,19 @@ class _AddNewCardPageState extends State<AddNewCardPage> {
 
   Future<void> loadCards() async {
     if (user == null) return;
-    final doc = await FirebaseFirestore.instance.collection('users').doc(user!.uid).get();
+    final doc =
+        await FirebaseFirestore.instance
+            .collection('users')
+            .doc(user!.uid)
+            .get();
     if (doc.exists) {
       final data = doc.data();
       if (data != null && data['cards'] != null) {
         final List<dynamic> cardList = data['cards'];
         setState(() {
-          cards = List<Map<String, String>>.from(cardList.map((e) => Map<String, String>.from(e)));
+          cards = List<Map<String, String>>.from(
+            cardList.map((e) => Map<String, String>.from(e)),
+          );
         });
       }
     }
@@ -64,20 +70,24 @@ class _AddNewCardPageState extends State<AddNewCardPage> {
     };
 
     try {
-      final docRef = FirebaseFirestore.instance.collection('users').doc(user!.uid);
+      final docRef = FirebaseFirestore.instance
+          .collection('users')
+          .doc(user!.uid);
       final snapshot = await docRef.get();
 
       List<dynamic> updatedCards = [];
-      if (snapshot.exists && snapshot.data() != null && snapshot.data()!.containsKey('cards')) {
+      if (snapshot.exists &&
+          snapshot.data() != null &&
+          snapshot.data()!.containsKey('cards')) {
         updatedCards = List.from(snapshot['cards']);
       }
 
       updatedCards.add(newCard);
-      await docRef.set({ 'cards': updatedCards }, SetOptions(merge: true));
+      await docRef.set({'cards': updatedCards}, SetOptions(merge: true));
 
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('تم حفظ البطاقة بنجاح')),
-      );
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(const SnackBar(content: Text('تم حفظ البطاقة بنجاح')));
 
       setState(() {
         showForm = false;
@@ -89,9 +99,9 @@ class _AddNewCardPageState extends State<AddNewCardPage> {
 
       loadCards();
     } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('حدث خطأ أثناء الحفظ: $e')),
-      );
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text('حدث خطأ أثناء الحفظ: $e')));
     }
   }
 
@@ -102,10 +112,7 @@ class _AddNewCardPageState extends State<AddNewCardPage> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        title: const Text(
-          'My Cards',
-          style: TextStyle(color: Colors.white),
-        ),
+        title: const Text('My Cards', style: TextStyle(color: Colors.white)),
         actions: [
           IconButton(
             icon: Icon(Icons.add_card, color: Colors.white),
@@ -171,16 +178,22 @@ class _AddNewCardPageState extends State<AddNewCardPage> {
               const SizedBox(height: 16),
               ElevatedButton.icon(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.deepPurpleAccent,
-                  padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                  backgroundColor: Color(0xff0066FF),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 70,
+                    vertical: 14,
+                  ),
                 ),
                 onPressed: () {
                   if (formKey.currentState!.validate()) {
                     saveCardToFirestore();
                   }
                 },
-                icon: const Icon(Icons.save),
-                label: const Text('Save Card'),
+                icon: const Icon(Icons.save, color: Colors.white),
+                label: const Text(
+                  'Save Card',
+                  style: TextStyle(color: Colors.white),
+                ),
               ),
               const SizedBox(height: 24),
             ],

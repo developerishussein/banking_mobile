@@ -8,6 +8,9 @@ class FromEmail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      style: TextStyle(color: Colors.white),
+      cursorColor: Colors.white,
+
       controller: emailController,
       validator: (value) {
         if (value == null || value.isEmpty) {
@@ -19,7 +22,7 @@ class FromEmail extends StatelessWidget {
         border: OutlineInputBorder(),
         prefixIcon: Icon(Icons.email_rounded),
         labelText: 'Email Address',
-        labelStyle: TextStyle(color: Colors.blueGrey),
+        labelStyle: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),
       ),
     );
   }

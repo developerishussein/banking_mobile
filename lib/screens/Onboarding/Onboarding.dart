@@ -18,6 +18,8 @@ class _OnboardingState extends State<Onboarding> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xff161622),
+
       body: Column(
         children: [
           Expanded(
@@ -42,7 +44,7 @@ class _OnboardingState extends State<Onboarding> {
               customindecetor(acteiv: index == 2),
             ],
           ),
-          Mybotton(index: index, controller: _controller,),
+          Mybotton(index: index, controller: _controller),
         ],
       ),
     );

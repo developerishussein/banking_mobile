@@ -10,7 +10,7 @@ class Toptext extends StatelessWidget {
       style: TextStyle(
         fontSize: 34,
         fontWeight: FontWeight.w800,
-        color: Colors.black,
+        color: Colors.white,
       ),
     );
   }

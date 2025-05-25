@@ -13,11 +13,19 @@ class Onb3 extends StatelessWidget {
 
         Text(
           'Paying for Everything is\n Easy and Convenient',
-          style: TextStyle(fontSize: 26, fontWeight: FontWeight.w800),
+          style: TextStyle(
+            fontSize: 26,
+            fontWeight: FontWeight.w800,
+            color: Colors.white,
+          ),
         ),
         Text(
           'Built-in Fingerprint, face recognition\n and more, keeping you completely safe',
-          style: TextStyle(fontSize: 14, fontWeight: FontWeight.w800),
+          style: TextStyle(
+            fontSize: 14,
+            fontWeight: FontWeight.w800,
+            color: Colors.white,
+          ),
         ),
       ],
     );

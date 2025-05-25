@@ -20,11 +20,10 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      appBar: AppBar(backgroundColor: Colors.white, elevation: 0),
+      backgroundColor: const Color(0xff161622),
+      appBar: AppBar(backgroundColor: const Color(0xff161622), elevation: 0),
       body: GestureDetector(
-        onTap:
-            () =>FocusScope.of(context,).unfocus(), 
+        onTap: () => FocusScope.of(context).unfocus(),
         child: SingleChildScrollView(
           child: Form(
             key: _globalKey,
@@ -36,13 +35,17 @@ class _LoginState extends State<Login> {
                   const SizedBox(height: 20),
                   const Toptext(),
                   const SizedBox(height: 100),
-                  FromEmail(emailController: emailController,),
+                  FromEmail(emailController: emailController),
                   const SizedBox(height: 25),
-                  FromPas(passwordController: passwordController,),
+                  FromPas(passwordController: passwordController),
                   const SizedBox(height: 50),
-                  Loginbotton(emailController: emailController, passwordController: passwordController, globalKey: _globalKey,), 
+                  Loginbotton(
+                    emailController: emailController,
+                    passwordController: passwordController,
+                    globalKey: _globalKey,
+                  ),
                   const SizedBox(height: 20),
-                  const RegisterButton(), 
+                  const RegisterButton(),
                 ],
               ),
             ),

@@ -8,6 +8,7 @@ class FromPhone extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      style: TextStyle(color: Colors.white),
       keyboardType: TextInputType.numberWithOptions(),
       controller: phonenumberController,
       validator: (value) {

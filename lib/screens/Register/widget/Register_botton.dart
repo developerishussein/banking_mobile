@@ -46,25 +46,28 @@ class RegisterButton extends StatelessWidget {
               // ✅ إنشاء حساب جديد
               final userCredential = await FirebaseAuth.instance
                   .createUserWithEmailAndPassword(
-                email: email,
-                password: password,
-              );
+                    email: email,
+                    password: password,
+                  );
 
               final uid = userCredential.user!.uid;
 
               // ✅ إضافة البيانات إلى Firestore
-              await FirebaseFirestore.instance.collection('users').doc(uid).set({
-                'fullname': fullname,
-                'phone': phone,
-                'email': email,
-                'created_at': Timestamp.now(),
-              });
+              await FirebaseFirestore.instance
+                  .collection('users')
+                  .doc(uid)
+                  .set({
+                    'fullname': fullname,
+                    'phone': phone,
+                    'email': email,
+                    'created_at': Timestamp.now(),
+                  });
 
               ScaffoldMessenger.of(context).showSnackBar(
                 const SnackBar(content: Text('تم إنشاء الحساب بنجاح')),
               );
 
-              Get.offAllNamed(AppRoutes.homePage); // أو أي صفحة تريد التوجيه إليها
+              Get.offAllNamed(AppRoutes.mynv); // أو أي صفحة تريد التوجيه إليها
             } on FirebaseAuthException catch (e) {
               String message;
               if (e.code == 'email-already-in-use') {
@@ -75,16 +78,16 @@ class RegisterButton extends StatelessWidget {
                 message = 'حدث خطأ: ${e.message}';
               }
 
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(content: Text(message)),
-              );
+              ScaffoldMessenger.of(
+                context,
+              ).showSnackBar(SnackBar(content: Text(message)));
             }
           }
         },
         child: const Text(
           'Create Account',
           style: TextStyle(
-            fontSize: 26,
+            fontSize: 18,
             fontWeight: FontWeight.w800,
             color: Colors.white,
           ),

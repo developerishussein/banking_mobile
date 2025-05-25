@@ -10,7 +10,7 @@ class RegisterButton extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        const Text('I’m a new user.'),
+        const Text('I’m a new user.', style: TextStyle(color: Colors.white)),
         TextButton(
           onPressed: () {
             Get.toNamed(AppRoutes.register);

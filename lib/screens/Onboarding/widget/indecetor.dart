@@ -7,7 +7,7 @@ class customindecetor extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AnimatedContainer(
-      duration: Duration(microseconds: 500),
+      duration: Duration(microseconds: 250),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         color: acteiv ? Colors.blueAccent : Colors.blueGrey,

@@ -41,14 +41,16 @@ class _MycardsState extends State<Mycards> {
       ),
       body: Container(
         alignment: Alignment.center,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            SizedBox(height: 30),
-            Image.asset('assets/Onboarding/Graph.png'),
-            TextSBotton(),
-            StockList(),
-          ],
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              SizedBox(height: 30),
+              Image.asset('assets/Onboarding/Graph.png'),
+              TextSBotton(),
+              StockList(),
+            ],
+          ),
         ),
       ),
     );

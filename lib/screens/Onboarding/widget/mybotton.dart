@@ -32,7 +32,7 @@ class Mybotton extends StatelessWidget {
           if (index < 2) {
             controller.animateToPage(
               index + 1,
-              duration: Duration(milliseconds: 500),
+              duration: Duration(milliseconds: 250),
               curve: Curves.linear,
             );
           } else {

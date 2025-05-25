@@ -1,4 +1,8 @@
+import 'package:banking_mobile/core/App/AppRoutes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/utils.dart';
+
 
 class MyreceiveBotton extends StatelessWidget {
   const MyreceiveBotton({super.key});
@@ -16,7 +20,9 @@ class MyreceiveBotton extends StatelessWidget {
           ),
           child: IconButton(
             color: Colors.white,
-            onPressed: () {},
+            onPressed: () {
+              Get.toNamed(AppRoutes.requestMoneyPage);
+            },
             icon: Icon(Icons.arrow_downward),
           ),
         ),

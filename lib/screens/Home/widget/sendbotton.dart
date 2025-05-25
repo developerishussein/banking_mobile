@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+
+//import '../../Send Money/SendMoneyPage.dart';
+
 class Sendbotton extends StatelessWidget {
   const Sendbotton({super.key});
 
@@ -16,7 +19,9 @@ class Sendbotton extends StatelessWidget {
           ),
           child: IconButton(
             color: Colors.white,
-            onPressed: () {},
+            onPressed: () {
+             // Get.to(SendMoneyPage());
+            },
             icon: Icon(Icons.arrow_upward),
           ),
         ),

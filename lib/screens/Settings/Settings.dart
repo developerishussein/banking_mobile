@@ -28,17 +28,17 @@ class _SettingsState extends State<Settings> {
         padding: const EdgeInsets.all(20.0),
         child: Column(
           children: [
-            Mytext1(),
-            SizedBox(height: 25),
-            MyLanguage(),
-            MyProfile(),
-            ContactUs(),
-            SizedBox(height: 25),
-            Mytext2(),
-            SizedBox(height: 25),
-            ChangePassword(),
-            PrivacyPolicy(),
-            Mytext3(),
+            const Mytext1(),
+            const SizedBox(height: 25),
+            const MyLanguage(),
+            const MyProfile(),
+            const ContactUs(),
+            const SizedBox(height: 25),
+            const Mytext2(),
+            const SizedBox(height: 25),
+            const ChangePassword(),
+            const PrivacyPolicy(),
+            const Mytext3(),
             Card(
               color: const Color(
                 0xff1E1E2D,

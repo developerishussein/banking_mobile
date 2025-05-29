@@ -38,7 +38,7 @@ class _RegisterState extends State<Register> {
                 children: [
                   const SizedBox(height: 20),
                   const Toptext(),
-                  SizedBox(height: 75),
+                  const SizedBox(height: 75),
                   FromName(fullnameController: fullnameController),
                   const SizedBox(height: 25),
                   FromPhone(phonenumberController: phonenumberController),

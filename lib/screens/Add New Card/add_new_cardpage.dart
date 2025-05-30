@@ -184,6 +184,9 @@ class _AddNewCardPageState extends State<AddNewCardPage> {
                 onPressed: () {
                   if (formKey.currentState!.validate()) {
                     saveCardToFirestore();
+                    setState(() {
+                      
+                    });
                   }
                 },
                 icon: const Icon(Icons.save, color: Colors.white),

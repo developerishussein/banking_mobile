@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_credit_card/flutter_credit_card.dart';
 
  class SelectedCardView extends StatelessWidget {
-  late final Map<String, String>? selectedCard;
-  late final VoidCallback onSwap;
+   final Map<String, String>? selectedCard;
+   final VoidCallback onSwap;
 
-   SelectedCardView({
+    const SelectedCardView({super.key, 
     required this.selectedCard,
     required this.onSwap,
   });

@@ -48,7 +48,7 @@ class _RegisterState extends State<Register> {
                     globalKey: _globalKey,
                   ),
                   const SizedBox(height: 20),
-                  const loginBotton(),
+                  const LoginBotton(),
                 ],
               ),
             ),

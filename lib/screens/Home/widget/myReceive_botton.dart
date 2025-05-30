@@ -1,7 +1,6 @@
-import 'package:banking_mobile/core/App/AppRoutes.dart';
+import 'package:banking_mobile/core/App/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/utils.dart';
 
 
 class MyreceiveBotton extends StatelessWidget {

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'package:get/utils.dart';
 
-class loginBotton extends StatelessWidget {
-  const loginBotton({super.key});
+class LoginBotton extends StatelessWidget {
+  const LoginBotton({super.key});
 
   @override
   Widget build(BuildContext context) {

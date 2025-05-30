@@ -1,4 +1,4 @@
-export 'package:banking_mobile/core/App/AppRoutes.dart';
+export 'package:banking_mobile/core/App/app_routes.dart';
 export 'package:banking_mobile/screens/Profile/widget/my_ListTile.dart';
 export 'package:banking_mobile/screens/Profile/widget/my_widgets.dart';
 export 'package:banking_mobile/core/const/colors/mycolors.dart';

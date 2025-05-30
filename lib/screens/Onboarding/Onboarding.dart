@@ -32,11 +32,11 @@ class _OnboardingState extends State<Onboarding> {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              customindecetor(acteiv: index == 0),
+              Customindecetor(acteiv: index == 0),
               SizedBox(width: 5),
-              customindecetor(acteiv: index == 1),
+              Customindecetor(acteiv: index == 1),
               SizedBox(width: 5),
-              customindecetor(acteiv: index == 2),
+              Customindecetor(acteiv: index == 2),
             ],
           ),
           Mybotton(index: index, controller: _controller),

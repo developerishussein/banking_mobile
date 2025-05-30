@@ -33,7 +33,7 @@ class ProfileController extends GetxController {
         }
       }
     } catch (e) {
-      print("Error fetching user data: $e");
+     // print("Error fetching user data: $e");
     }
   }
 }

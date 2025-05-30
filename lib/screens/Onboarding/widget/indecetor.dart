@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class customindecetor extends StatelessWidget {
+class Customindecetor extends StatelessWidget {
   final bool acteiv;
 
-  const customindecetor({super.key, required this.acteiv});
+  const Customindecetor({super.key, required this.acteiv});
   @override
   Widget build(BuildContext context) {
     return AnimatedContainer(

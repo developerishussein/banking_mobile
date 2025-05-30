@@ -1,9 +1,9 @@
 export 'package:banking_mobile/core/const/colors/mycolors.dart';
 export 'package:flutter/material.dart';
-export 'widget/Change_Password.dart';
-export 'widget/Contact_Us.dart';
-export 'widget/MyLanguage.dart';
-export 'widget/My_Profile.dart';
+export 'widget/change_password.dart';
+export 'widget/contact_us.dart';
+export 'widget/mylanguage.dart';
+export 'widget/my_profile.dart';
 export 'widget/Privacy_Policy.dart';
 export 'widget/myappbar.dart';
 export 'widget/mytext1.dart';

@@ -1,4 +1,4 @@
-export 'package:banking_mobile/core/App/AppRoutes.dart';
+export 'package:banking_mobile/core/App/app_routes.dart';
 export 'package:banking_mobile/core/const/colors/mycolors.dart';
 export 'package:firebase_auth/firebase_auth.dart';
 export 'package:flutter/material.dart';

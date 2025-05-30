@@ -1,13 +1,13 @@
-import 'package:banking_mobile/screens/Login/Login.dart';
+import 'package:banking_mobile/screens/Login/login.dart';
 import 'package:banking_mobile/screens/mynv.dart';
 import 'package:get/get.dart';
-import '../../screens/Add New Card/AddNewCardPage.dart';
+import '../../screens/Add New Card/add_new_cardPage.dart';
 import '../../screens/Home/home_page.dart';
-import '../../screens/Onboarding/Onboarding.dart';
-import '../../screens/Register/Register.dart';
+import '../../screens/Onboarding/onboarding.dart';
+import '../../screens/Register/register.dart';
 import '../../screens/Request Money/request_money_page.dart';
-import '../../screens/SplashScreen/SplashScreen.dart';
-import '../../screens/Terms & Condition/Terms&Condition.dart';
+import '../../screens/SplashScreen/splashscreen.dart';
+import '../../screens/Terms & Condition/terms_condition.dart';
 
 class AppRoutes {
   static const String splashscreen = '/';

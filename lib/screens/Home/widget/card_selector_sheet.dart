@@ -5,7 +5,7 @@ class CardSelector extends StatelessWidget {
   final List<Map<String, String>> cards;
   final void Function(int index) onSelect;
 
-  const CardSelector({
+   const CardSelector({super.key, 
     required this.cards,
     required this.onSelect,
   });

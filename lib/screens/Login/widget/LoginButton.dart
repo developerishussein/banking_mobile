@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../core/App/AppRoutes.dart';
+import '../../../core/App/app_routes.dart';
 
 class Loginbotton extends StatelessWidget {
   const Loginbotton({

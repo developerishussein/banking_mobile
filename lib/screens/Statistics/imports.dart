@@ -1,10 +1,10 @@
 export 'package:banking_mobile/core/const/colors/mycolors.dart';
-export 'package:banking_mobile/screens/Profile/widget/my_appbar.dart';
+export 'package:banking_mobile/screens/Statistics/widget/my_appbar.dart';
 export 'package:cloud_firestore/cloud_firestore.dart';
 export 'package:firebase_auth/firebase_auth.dart';
 export 'package:flutter/material.dart';
 export 'package:flutter_credit_card/flutter_credit_card.dart';
-export '../../core/const/widgets/mycard.dart';
+export '../../core/const/widgets/my_card_page.dart';
 export '../../core/const/widgets/stock_list.dart';
-export 'widget/mySlider.dart';
+export 'widget/myslider.dart';
 export 'widget/mytext.dart';

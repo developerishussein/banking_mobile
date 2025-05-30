@@ -1,0 +1,469 @@
+PS C:\Users\x\Desktop\flutter apps\banking_mobile> dart run dart_code_metrics:metrics analyze lib
+✔ Analysis is completed. Preparing the results: 6.3s
+
+lib\core\const\widgets\mycard.dart:
+STYLE   Missing blank line before return.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\core\const\widgets\mycard.dart:46:7  
+        newline-before-return : https://dartcodemetrics.dev/docs/rules/common/newline-before-return
+
+WARNING Prefer trailing comma.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\core\const\widgets\mycard.dart:59:10 
+        prefer-trailing-comma : https://dartcodemetrics.dev/docs/rules/common/prefer-trailing-comma
+
+WARNING Avoid using non null assertion.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\core\const\widgets\mycard.dart:135:19
+        avoid-non-null-assertion : https://dartcodemetrics.dev/docs/rules/common/avoid-non-null-assertion
+
+
+lib\core\models\stock_model.dart:
+ALARM   StockModel
+        weight of a class: 0
+
+
+lib\core\Services\firebase\firebase_options.dart:
+STYLE   public-fields should be before public-getters.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\core\Services\firebase\firebase_options.dart:43:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+STYLE   public-fields should be before public-getters.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\core\Services\firebase\firebase_options.dart:53:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+STYLE   public-fields should be before public-getters.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\core\Services\firebase\firebase_options.dart:61:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+STYLE   public-fields should be before public-getters.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\core\Services\firebase\firebase_options.dart:70:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+STYLE   public-fields should be before public-getters.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\core\Services\firebase\firebase_options.dart:79:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+ALARM   DefaultFirebaseOptions
+        weight of a class: 0
+
+
+lib\screens\Add New Card\AddNewCardPage.dart:
+WARNING Avoid using non null assertion.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Add New Card\AddNewCardPage.dart:44:18
+        avoid-non-null-assertion : https://dartcodemetrics.dev/docs/rules/common/avoid-non-null-assertion
+
+WARNING Avoid using dynamic type.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Add New Card\AddNewCardPage.dart:49:19
+        avoid-dynamic : https://dartcodemetrics.dev/docs/rules/common/avoid-dynamic
+
+WARNING Avoid using non null assertion.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Add New Card\AddNewCardPage.dart:72:16
+        avoid-non-null-assertion : https://dartcodemetrics.dev/docs/rules/common/avoid-non-null-assertion
+
+WARNING Avoid using dynamic type.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Add New Card\AddNewCardPage.dart:75:11
+        avoid-dynamic : https://dartcodemetrics.dev/docs/rules/common/avoid-dynamic
+
+WARNING Prefer moving repeated invocations to variable and use it instead.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Add New Card\AddNewCardPage.dart:77:11
+        prefer-moving-to-variable : https://dartcodemetrics.dev/docs/rules/common/prefer-moving-to-variable
+
+WARNING Avoid using non null assertion.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Add New Card\AddNewCardPage.dart:78:11
+        avoid-non-null-assertion : https://dartcodemetrics.dev/docs/rules/common/avoid-non-null-assertion
+
+WARNING Prefer moving repeated invocations to variable and use it instead.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Add New Card\AddNewCardPage.dart:78:11
+        prefer-moving-to-variable : https://dartcodemetrics.dev/docs/rules/common/prefer-moving-to-variable
+
+WARNING Avoid using non null assertion.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Add New Card\AddNewCardPage.dart:185:23
+        avoid-non-null-assertion : https://dartcodemetrics.dev/docs/rules/common/avoid-non-null-assertion
+
+WARNING _AddNewCardPageState.loadCards
+        maximum nesting level: 4
+
+
+lib\screens\Change_Password\Change_Password.dart:
+WARNING Prefer moving repeated invocations to variable and use it instead.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Change_Password\Change_Password.dart:40:30
+        prefer-moving-to-variable : https://dartcodemetrics.dev/docs/rules/common/prefer-moving-to-variable
+
+WARNING Prefer moving repeated invocations to variable and use it instead.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Change_Password\Change_Password.dart:43:21
+        prefer-moving-to-variable : https://dartcodemetrics.dev/docs/rules/common/prefer-moving-to-variable
+
+WARNING Prefer moving repeated invocations to variable and use it instead.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Change_Password\Change_Password.dart:48:21
+        prefer-moving-to-variable : https://dartcodemetrics.dev/docs/rules/common/prefer-moving-to-variable
+
+WARNING Prefer moving repeated invocations to variable and use it instead.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Change_Password\Change_Password.dart:49:26
+        prefer-moving-to-variable : https://dartcodemetrics.dev/docs/rules/common/prefer-moving-to-variable
+
+
+lib\screens\Change_Password\controller\change_password_controller.dart:
+WARNING Avoid using non null assertion.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Change_Password\controller\change_password_controller.dart:16:16
+        avoid-non-null-assertion : https://dartcodemetrics.dev/docs/rules/common/avoid-non-null-assertion
+
+WARNING Avoid using non null assertion.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Change_Password\controller\change_password_controller.dart:16:16
+        avoid-non-null-assertion : https://dartcodemetrics.dev/docs/rules/common/avoid-non-null-assertion
+
+
+lib\screens\Edit Profile\controller\edit_profile_controller.dart:
+STYLE   public-fields should be before private-fields.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Edit Profile\controller\edit_profile_controller.dart:10:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+STYLE   public-fields should be before private-fields.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Edit Profile\controller\edit_profile_controller.dart:11:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+STYLE   public-fields should be before private-fields.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Edit Profile\controller\edit_profile_controller.dart:12:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+STYLE   public-fields should be before private-fields.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Edit Profile\controller\edit_profile_controller.dart:13:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+STYLE   public-fields should be before private-fields.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Edit Profile\controller\edit_profile_controller.dart:14:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+STYLE   public-fields should be before private-fields.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Edit Profile\controller\edit_profile_controller.dart:15:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+STYLE   public-fields should be before private-fields.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Edit Profile\controller\edit_profile_controller.dart:17:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+STYLE   public-fields should be before private-fields.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Edit Profile\controller\edit_profile_controller.dart:18:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+STYLE   public-fields should be before private-fields.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Edit Profile\controller\edit_profile_controller.dart:19:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+STYLE   Missing blank line before return.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Edit Profile\controller\edit_profile_controller.dart:93:5
+        newline-before-return : https://dartcodemetrics.dev/docs/rules/common/newline-before-return
+
+
+lib\screens\Edit Profile\edit_profile_page.dart:
+WARNING Prefer moving repeated invocations to variable and use it instead.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Edit Profile\edit_profile_page.dart:27:13
+        prefer-moving-to-variable : https://dartcodemetrics.dev/docs/rules/common/prefer-moving-to-variable
+
+WARNING Prefer moving repeated invocations to variable and use it instead.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Edit Profile\edit_profile_page.dart:51:25
+        prefer-moving-to-variable : https://dartcodemetrics.dev/docs/rules/common/prefer-moving-to-variable
+
+
+lib\screens\Edit Profile\widget\BirthDate.dart:
+WARNING Prefer moving repeated invocations to variable and use it instead.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Edit Profile\widget\BirthDate.dart:4:17
+        prefer-moving-to-variable : https://dartcodemetrics.dev/docs/rules/common/prefer-moving-to-variable
+
+WARNING Prefer moving repeated invocations to variable and use it instead.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Edit Profile\widget\BirthDate.dart:6:18
+        prefer-moving-to-variable : https://dartcodemetrics.dev/docs/rules/common/prefer-moving-to-variable
+
+WARNING Prefer moving repeated invocations to variable and use it instead.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Edit Profile\widget\BirthDate.dart:12:24
+        prefer-moving-to-variable : https://dartcodemetrics.dev/docs/rules/common/prefer-moving-to-variable
+
+WARNING Avoid using non null assertion.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Edit Profile\widget\BirthDate.dart:22:22
+        avoid-non-null-assertion : https://dartcodemetrics.dev/docs/rules/common/avoid-non-null-assertion
+
+WARNING Prefer moving repeated invocations to variable and use it instead.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Edit Profile\widget\BirthDate.dart:27:11
+        prefer-moving-to-variable : https://dartcodemetrics.dev/docs/rules/common/prefer-moving-to-variable
+
+
+lib\screens\Home\home_page.dart:
+WARNING Avoid using non null assertion.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Home\home_page.dart:33:22
+        avoid-non-null-assertion : https://dartcodemetrics.dev/docs/rules/common/avoid-non-null-assertion
+
+WARNING Avoid using non null assertion.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Home\home_page.dart:42:37
+        avoid-non-null-assertion : https://dartcodemetrics.dev/docs/rules/common/avoid-non-null-assertion
+
+WARNING Avoid using dynamic type.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Home\home_page.dart:43:19
+        avoid-dynamic : https://dartcodemetrics.dev/docs/rules/common/avoid-dynamic
+
+WARNING _HomePageState.fetchCardData
+        cyclomatic complexity: 14
+        maximum nesting level: 4
+
+WARNING _HomePageState.showCardSelector
+        maximum nesting level: 4
+
+
+lib\screens\Home\widget\card_selector_sheet.dart:
+STYLE   Missing blank line before return.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Home\widget\card_selector_sheet.dart:22:13
+        newline-before-return : https://dartcodemetrics.dev/docs/rules/common/newline-before-return
+
+
+lib\screens\Home\widget\myappbar.dart:
+STYLE   public-getters should be before constructors.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Home\widget\myappbar.dart:10:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+STYLE   Missing blank line before return.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Home\widget\myappbar.dart:21:5
+        newline-before-return : https://dartcodemetrics.dev/docs/rules/common/newline-before-return
+
+STYLE   public-methods should be before private-methods.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Home\widget\myappbar.dart:24:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+WARNING Myappbar.build
+        maximum nesting level: 5
+
+
+lib\screens\Login\widget\FromEmail.dart:
+STYLE   public-fields should be before constructors.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Login\widget\FromEmail.dart:6:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+STYLE   Missing blank line before return.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Login\widget\FromEmail.dart:19:9
+        newline-before-return : https://dartcodemetrics.dev/docs/rules/common/newline-before-return
+
+
+lib\screens\Login\widget\FromPas.dart:
+STYLE   public-fields should be before constructors.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Login\widget\FromPas.dart:5:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+STYLE   Missing blank line before return.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Login\widget\FromPas.dart:16:9
+        newline-before-return : https://dartcodemetrics.dev/docs/rules/common/newline-before-return
+
+
+lib\screens\Login\widget\LoginButton.dart:
+STYLE   public-fields should be before constructors.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Login\widget\LoginButton.dart:14:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+STYLE   public-fields should be before constructors.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Login\widget\LoginButton.dart:15:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+STYLE   public-fields should be before constructors.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Login\widget\LoginButton.dart:16:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+WARNING Prefer moving repeated invocations to variable and use it instead.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Login\widget\LoginButton.dart:20:22
+        prefer-moving-to-variable : https://dartcodemetrics.dev/docs/rules/common/prefer-moving-to-variable
+
+WARNING Prefer moving repeated invocations to variable and use it instead.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Login\widget\LoginButton.dart:21:22
+        prefer-moving-to-variable : https://dartcodemetrics.dev/docs/rules/common/prefer-moving-to-variable
+
+STYLE   Missing blank line before return.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Login\widget\LoginButton.dart:22:5
+        newline-before-return : https://dartcodemetrics.dev/docs/rules/common/newline-before-return
+
+WARNING Avoid using non null assertion.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Login\widget\LoginButton.dart:33:15
+        avoid-non-null-assertion : https://dartcodemetrics.dev/docs/rules/common/avoid-non-null-assertion
+
+WARNING Loginbotton.build
+        maximum nesting level: 5
+
+
+lib\screens\mynv.dart:
+WARNING Prefer moving repeated invocations to variable and use it instead.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\mynv.dart:18:20
+        prefer-moving-to-variable : https://dartcodemetrics.dev/docs/rules/common/prefer-moving-to-variable
+
+WARNING Prefer moving repeated invocations to variable and use it instead.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\mynv.dart:22:27
+        prefer-moving-to-variable : https://dartcodemetrics.dev/docs/rules/common/prefer-moving-to-variable
+
+
+lib\screens\Onboarding\Onboarding.dart:
+STYLE   public-fields should be before private-fields.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Onboarding\Onboarding.dart:12:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+
+lib\screens\Onboarding\widget\mybotton.dart:
+STYLE   public-fields should be before constructors.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Onboarding\widget\mybotton.dart:13:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+STYLE   public-fields should be before constructors.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Onboarding\widget\mybotton.dart:14:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+WARNING Prefer moving repeated invocations to variable and use it instead.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Onboarding\widget\mybotton.dart:17:22
+        prefer-moving-to-variable : https://dartcodemetrics.dev/docs/rules/common/prefer-moving-to-variable
+
+WARNING Prefer moving repeated invocations to variable and use it instead.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Onboarding\widget\mybotton.dart:18:22
+        prefer-moving-to-variable : https://dartcodemetrics.dev/docs/rules/common/prefer-moving-to-variable
+
+STYLE   Missing blank line before return.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Onboarding\widget\mybotton.dart:19:5
+        newline-before-return : https://dartcodemetrics.dev/docs/rules/common/newline-before-return
+
+
+lib\screens\Profile\controller\profile_controller.dart:
+STYLE   public-fields should be before private-fields.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Profile\controller\profile_controller.dart:9:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+STYLE   public-fields should be before private-fields.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Profile\controller\profile_controller.dart:10:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+STYLE   public-fields should be before private-fields.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Profile\controller\profile_controller.dart:11:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+STYLE   public-fields should be before private-fields.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Profile\controller\profile_controller.dart:12:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+WARNING ProfileController.fetchUserData
+        cyclomatic complexity: 11
+        maximum nesting level: 4
+
+
+lib\screens\Profile\profile_page.dart:
+STYLE   Missing blank line before return.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Profile\profile_page.dart:20:11
+        newline-before-return : https://dartcodemetrics.dev/docs/rules/common/newline-before-return
+
+WARNING ProfilePage.build
+        maximum nesting level: 4
+
+
+lib\screens\Profile\widget\my_appbar.dart:
+STYLE   public-getters should be before constructors.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Profile\widget\my_appbar.dart:5:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+
+lib\screens\Register\widget\from_email.dart:
+STYLE   public-fields should be before constructors.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Register\widget\from_email.dart:6:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+STYLE   Missing blank line before return.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Register\widget\from_email.dart:17:9
+        newline-before-return : https://dartcodemetrics.dev/docs/rules/common/newline-before-return
+
+
+lib\screens\Register\widget\from_name.dart:
+STYLE   public-fields should be before constructors.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Register\widget\from_name.dart:6:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+STYLE   Missing blank line before return.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Register\widget\from_name.dart:17:9
+        newline-before-return : https://dartcodemetrics.dev/docs/rules/common/newline-before-return
+
+
+lib\screens\Register\widget\from_pas.dart:
+STYLE   public-fields should be before constructors.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Register\widget\from_pas.dart:5:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+STYLE   Missing blank line before return.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Register\widget\from_pas.dart:16:9
+        newline-before-return : https://dartcodemetrics.dev/docs/rules/common/newline-before-return
+
+
+lib\screens\Register\widget\from_phone.dart:
+STYLE   public-fields should be before constructors.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Register\widget\from_phone.dart:6:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+STYLE   Missing blank line before return.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Register\widget\from_phone.dart:18:9
+        newline-before-return : https://dartcodemetrics.dev/docs/rules/common/newline-before-return
+
+
+lib\screens\Register\widget\Register_botton.dart:
+STYLE   public-fields should be before constructors.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Register\widget\Register_botton.dart:17:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+STYLE   public-fields should be before constructors.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Register\widget\Register_botton.dart:18:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+STYLE   public-fields should be before constructors.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Register\widget\Register_botton.dart:19:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+STYLE   public-fields should be before constructors.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Register\widget\Register_botton.dart:20:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+STYLE   public-fields should be before constructors.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Register\widget\Register_botton.dart:21:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+WARNING Prefer moving repeated invocations to variable and use it instead.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Register\widget\Register_botton.dart:25:22
+        prefer-moving-to-variable : https://dartcodemetrics.dev/docs/rules/common/prefer-moving-to-variable
+
+WARNING Prefer moving repeated invocations to variable and use it instead.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Register\widget\Register_botton.dart:26:22
+        prefer-moving-to-variable : https://dartcodemetrics.dev/docs/rules/common/prefer-moving-to-variable
+
+WARNING Avoid using non null assertion.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Register\widget\Register_botton.dart:39:15
+        avoid-non-null-assertion : https://dartcodemetrics.dev/docs/rules/common/avoid-non-null-assertion
+
+WARNING Avoid using non null assertion.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Register\widget\Register_botton.dart:53:27
+        avoid-non-null-assertion : https://dartcodemetrics.dev/docs/rules/common/avoid-non-null-assertion
+
+WARNING RegisterButton.build
+        maximum nesting level: 5
+
+
+lib\screens\Request Money\request_money_page.dart:
+WARNING Prefer moving repeated invocations to variable and use it instead.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Request Money\request_money_page.dart:77:31
+        prefer-moving-to-variable : https://dartcodemetrics.dev/docs/rules/common/prefer-moving-to-variable
+
+WARNING Prefer moving repeated invocations to variable and use it instead.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Request Money\request_money_page.dart:78:35
+        prefer-moving-to-variable : https://dartcodemetrics.dev/docs/rules/common/prefer-moving-to-variable
+
+
+lib\screens\Settings\widget\myappbar.dart:
+STYLE   public-getters should be before constructors.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Settings\widget\myappbar.dart:6:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+
+lib\screens\Statistics\Statistics_page.dart:
+WARNING _StatisticsState.fetchCardData
+        maximum nesting level: 4
+
+
+lib\screens\Statistics\widget\my_appbar.dart:
+STYLE   public-getters should be before constructors.
+        at C:\Users\x\Desktop\flutter apps\banking_mobile\lib\screens\Statistics\widget\my_appbar.dart:4:3
+        member-ordering : https://dartcodemetrics.dev/docs/rules/common/member-ordering
+
+WARNING _MyAppbarState.build
+        maximum nesting level: 4
+
+

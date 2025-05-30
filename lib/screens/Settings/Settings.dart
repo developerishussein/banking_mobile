@@ -1,15 +1,5 @@
-import 'package:flutter/material.dart';
 
-import 'widget/Change_Password.dart';
-import 'widget/Contact_Us.dart';
-import 'widget/MyLanguage.dart';
-import 'widget/My_Profile.dart';
-import 'widget/Privacy_Policy.dart';
-import 'widget/myappbar.dart';
-import 'widget/mytext1.dart';
-import 'widget/mytext2.dart';
-import 'widget/mytext3.dart';
-
+import 'imports.dart';
 class Settings extends StatefulWidget {
   const Settings({super.key});
 
@@ -22,7 +12,7 @@ class _SettingsState extends State<Settings> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff161622),
+      backgroundColor: Mycolors.backgroundColor,
       appBar: MyWidget(),
       body: Padding(
         padding: const EdgeInsets.all(20.0),

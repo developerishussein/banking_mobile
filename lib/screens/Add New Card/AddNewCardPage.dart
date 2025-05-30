@@ -1,7 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_credit_card/flutter_credit_card.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+import 'imports.dart';
 
 class AddNewCardPage extends StatefulWidget {
   const AddNewCardPage({super.key});

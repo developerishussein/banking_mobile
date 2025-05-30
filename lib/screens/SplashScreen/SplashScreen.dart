@@ -1,9 +1,4 @@
-import 'package:banking_mobile/core/App/AppRoutes.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/material.dart';
-import 'package:get/get_navigation/get_navigation.dart';
-import 'package:get/state_manager.dart';
-
+import'imports.dart';
 class Splashscreen extends StatefulWidget {
   const Splashscreen({super.key});
 
@@ -28,7 +23,7 @@ class _SplashscreenState extends State<Splashscreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xff161622),
+      backgroundColor: Mycolors.backgroundColor,
 
       body: Container(
         width: double.infinity,

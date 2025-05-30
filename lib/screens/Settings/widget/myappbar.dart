@@ -1,3 +1,4 @@
+import 'package:banking_mobile/core/const/colors/mycolors.dart';
 import 'package:flutter/material.dart';
 
 class MyWidget extends StatelessWidget implements PreferredSizeWidget {
@@ -8,7 +9,7 @@ class MyWidget extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: Color(0xff161622),
+      backgroundColor: Mycolors.backgroundColor,
       centerTitle: true,
       title: Text(
         'Settings',

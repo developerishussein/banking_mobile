@@ -1,10 +1,4 @@
-import 'package:banking_mobile/core/App/AppRoutes.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'dart:convert';
-import '../Edit Profile/edit_profile_page.dart';
-import 'controller/profile_controller.dart';
+import 'imports.dart';
 
 class ProfilePage extends StatelessWidget {
   final controller = Get.put(ProfileController());
@@ -12,7 +6,7 @@ class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff161622),
+      backgroundColor: Mycolors.backgroundColor,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         title: Text('Profile', style: TextStyle(color: Colors.white)),

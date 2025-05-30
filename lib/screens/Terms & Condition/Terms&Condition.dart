@@ -1,3 +1,4 @@
+import 'package:banking_mobile/core/const/colors/mycolors.dart';
 import 'package:flutter/material.dart';
 
 class TermsAndConditionPage extends StatelessWidget {
@@ -6,9 +7,9 @@ class TermsAndConditionPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xff161622),
+      backgroundColor: Mycolors.backgroundColor,
       appBar: AppBar(
-        backgroundColor: const Color(0xff161622),
+        backgroundColor: Mycolors.backgroundColor,
         elevation: 0,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back_ios_new, color: Colors.white),

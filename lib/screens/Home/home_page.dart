@@ -1,12 +1,5 @@
-import 'package:banking_mobile/core/const/widgets/stock_list.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_credit_card/flutter_credit_card.dart';
 
-import 'widget/myappbar.dart';
-import 'widget/myrow_botton.dart';
-import 'widget/mytext_botton.dart';
+import 'imports.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -70,7 +63,7 @@ class _HomePageState extends State<HomePage> {
   void showCardSelector() {
     showModalBottomSheet(
       context: context,
-      backgroundColor: const Color(0xff161622),
+      backgroundColor: Mycolors.backgroundColor,
       isScrollControlled: true,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
@@ -124,7 +117,7 @@ class _HomePageState extends State<HomePage> {
     final selectedCard = cards.isNotEmpty ? cards[selectedCardIndex] : null;
 
     return Scaffold(
-      backgroundColor: const Color(0xff161622),
+      backgroundColor: Mycolors.backgroundColor,
       appBar: Myappbar(),
       body:
           isLoading

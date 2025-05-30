@@ -1,9 +1,4 @@
-import 'package:banking_mobile/screens/Login/widget/FromEmail.dart';
-import 'package:banking_mobile/screens/Login/widget/FromPas.dart';
-import 'package:banking_mobile/screens/Login/widget/RegisterButton.dart';
-import 'package:banking_mobile/screens/Login/widget/LoginButton.dart';
-import 'package:banking_mobile/screens/Login/widget/Toptext.dart';
-import 'package:flutter/material.dart';
+import 'imports.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -20,8 +15,8 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xff161622),
-      appBar: AppBar(backgroundColor: const Color(0xff161622), elevation: 0),
+      backgroundColor: Mycolors.backgroundColor,
+      appBar: AppBar(backgroundColor: Mycolors.backgroundColor, elevation: 0),
       body: GestureDetector(
         onTap: () => FocusScope.of(context).unfocus(),
         child: SingleChildScrollView(

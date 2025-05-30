@@ -1,8 +1,4 @@
-import 'dart:convert';
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-
-import 'controller/edit_profile_controller.dart';
+import 'imports.dart';
 
 class EditProfileView extends StatelessWidget {
   final controller = Get.put(EditProfileController());
@@ -16,7 +12,7 @@ class EditProfileView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xff161622),
+      backgroundColor: Mycolors.backgroundColor,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         title: const Text(
@@ -89,7 +85,8 @@ class EditProfileView extends StatelessWidget {
                       ),
                       const SizedBox(height: 30),
                       ElevatedButton(
-                        onPressed: () => controller.updateUserData(userId,context),
+                        onPressed:
+                            () => controller.updateUserData(userId, context),
                         style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10),

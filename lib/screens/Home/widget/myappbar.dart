@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:banking_mobile/core/const/colors/mycolors.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -23,7 +24,7 @@ class Myappbar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: const Color(0xff161622),
+      backgroundColor: Mycolors.backgroundColor,
       elevation: 0,
       automaticallyImplyLeading: false,
       title: FutureBuilder<Map<String, dynamic>?>(

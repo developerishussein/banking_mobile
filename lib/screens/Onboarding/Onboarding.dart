@@ -1,9 +1,4 @@
-import 'package:banking_mobile/screens/Onboarding/widget/onb2.dart';
-import 'package:flutter/material.dart';
-import 'widget/indecetor.dart';
-import 'widget/mybotton.dart';
-import 'widget/onb1.dart';
-import 'widget/onb3.dart';
+import 'imports.dart';
 
 class Onboarding extends StatefulWidget {
   const Onboarding({super.key});
@@ -18,7 +13,7 @@ class _OnboardingState extends State<Onboarding> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xff161622),
+      backgroundColor: Mycolors.backgroundColor,
 
       body: Column(
         children: [

@@ -1,7 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-
-import 'controller/change_password_controller.dart';
+import 'imports.dart';
 
 class ChangePasswordPage extends StatelessWidget {
   final controller = Get.put(ChangePasswordController());

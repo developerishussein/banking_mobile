@@ -1,8 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-
-import 'controller/request_money_controller.dart';
-
+import 'imports.dart';
 class RequestMoneyPage extends StatelessWidget {
   final controller = Get.put(RequestMoneyController());
 

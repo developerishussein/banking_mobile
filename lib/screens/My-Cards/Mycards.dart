@@ -1,7 +1,4 @@
-import 'package:banking_mobile/screens/My-Cards/widget/text_botton.dart';
-import 'package:flutter/material.dart';
-
-import '../../core/const/widgets/stock_list.dart';
+import 'imports.dart';
 
 class Mycards extends StatefulWidget {
   const Mycards({super.key});
@@ -14,9 +11,9 @@ class _MycardsState extends State<Mycards> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff161622),
+      backgroundColor: Mycolors.backgroundColor,
       appBar: AppBar(
-        backgroundColor: Color(0xff161622),
+        backgroundColor: Mycolors.backgroundColor,
         centerTitle: true,
         title: Text(
           'My Cards',

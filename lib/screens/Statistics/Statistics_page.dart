@@ -1,12 +1,5 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_credit_card/flutter_credit_card.dart';
-import '../../core/const/widgets/mycard.dart';
-import '../../core/const/widgets/stock_list.dart';
-import 'widget/mySlider.dart';
-import 'widget/mytext.dart';
 
+import'imports.dart';
 class Statistics extends StatefulWidget {
   const Statistics({super.key});
 
@@ -56,9 +49,9 @@ class _StatisticsState extends State<Statistics> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xff161622),
+      backgroundColor: Mycolors.backgroundColor,
       appBar: AppBar(
-        backgroundColor: const Color(0xff161622),
+        backgroundColor: Mycolors.backgroundColor,
         centerTitle: true,
         title: const Text(
           'Statistics',

@@ -2,6 +2,8 @@ import 'imports.dart';
 class RequestMoneyPage extends StatelessWidget {
   final controller = Get.put(RequestMoneyController());
 
+   RequestMoneyPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     final labelStyle = TextStyle(color: Colors.white70);

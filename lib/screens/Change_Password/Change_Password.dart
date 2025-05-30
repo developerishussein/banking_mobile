@@ -1,7 +1,9 @@
-import 'imports.dart';
+import 'cimports.dart';
 
 class ChangePasswordPage extends StatelessWidget {
   final controller = Get.put(ChangePasswordController());
+
+  ChangePasswordPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,14 +27,14 @@ class ChangePasswordPage extends StatelessWidget {
         child: Column(
           children: [
             SizedBox(height: 100),
-            _buildTextField(
+            buildTextField(
               label: 'Current Password',
               controller: controller.currentPasswordController,
               obscureText: true,
             ),
             const SizedBox(height: 20),
             Obx(
-              () => _buildTextField(
+              () => buildTextField(
                 label: 'New Password',
                 controller: controller.newPasswordController,
                 obscureText: controller.isObscureNew.value,
@@ -50,7 +52,7 @@ class ChangePasswordPage extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 20),
-            _buildTextField(
+            buildTextField(
               label: 'Confirm New Password',
               controller: controller.confirmPasswordController,
               obscureText: true,
@@ -89,30 +91,5 @@ class ChangePasswordPage extends StatelessWidget {
         ),
       ),
     );
-  }
-
-  Widget _buildTextField({
-    required String label,
-    required TextEditingController controller,
-    bool obscureText = false,
-    Widget? suffixIcon,
-  }) {
-    return TextField(
-      controller: controller,
-      obscureText: obscureText,
-      style: const TextStyle(color: Colors.white),
-      decoration: InputDecoration(
-        labelText: label,
-        labelStyle: const TextStyle(color: Colors.grey),
-        suffixIcon: suffixIcon,
-        prefixIcon: const Icon(Icons.lock, color: Colors.grey),
-        enabledBorder: const UnderlineInputBorder(
-          borderSide: BorderSide(color: Colors.grey),
-        ),
-        focusedBorder: const UnderlineInputBorder(
-          borderSide: BorderSide(color: Colors.white),
-        ),
-      ),
-    );
-  }
+  } 
 }

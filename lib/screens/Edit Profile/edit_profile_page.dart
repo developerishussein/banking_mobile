@@ -1,4 +1,4 @@
-import 'imports.dart';
+import 'eimports.dart';
 
 class EditProfileView extends StatelessWidget {
   final controller = Get.put(EditProfileController());
@@ -59,25 +59,25 @@ class EditProfileView extends StatelessWidget {
                         style: TextStyle(color: Colors.grey),
                       ),
                       const SizedBox(height: 20),
-                      _buildTextField(
+                      buildTextField(
                         Icons.person,
                         "Full Name",
                         controller.fullnameController,
                       ),
                       const SizedBox(height: 16),
-                      _buildTextField(
+                      buildTextField(
                         Icons.email,
                         "Email Address",
                         controller.emailController,
                       ),
                       const SizedBox(height: 16),
-                      _buildTextField(
+                      buildTextField(
                         Icons.phone,
                         "Phone Number",
                         controller.phoneController,
                       ),
                       const SizedBox(height: 16),
-                      _buildBirthDateRow(context),
+                      buildBirthDateRow(context ),
                       const SizedBox(height: 20),
                       Text(
                         controller.createdAtText.value,
@@ -106,74 +106,6 @@ class EditProfileView extends StatelessWidget {
                   ),
                 ),
       ),
-    );
-  }
-
-  Widget _buildTextField(
-    IconData icon,
-    String label,
-    TextEditingController controller,
-  ) {
-    return TextField(
-      controller: controller,
-      style: const TextStyle(color: Colors.white),
-      decoration: InputDecoration(
-        prefixIcon: Icon(icon, color: Colors.white),
-        labelText: label,
-        labelStyle: const TextStyle(color: Colors.white70),
-        filled: true,
-        fillColor: const Color(0xff1E1E2E),
-        border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
-      ),
-    );
-  }
-
-  Widget _buildBirthDateRow(BuildContext context) {
-    final day = controller.birthdate.value.day;
-    final month = controller.monthName;
-    final year = controller.birthdate.value.year;
-
-    return GestureDetector(
-      onTap: () async {
-        final pickedDate = await showDatePicker(
-          context: context,
-          initialDate: controller.birthdate.value,
-          firstDate: DateTime(1900),
-          lastDate: DateTime.now(),
-          builder: (context, child) {
-            return Theme(
-              data: ThemeData.dark().copyWith(
-                primaryColor: Colors.blueAccent,
-                colorScheme: const ColorScheme.dark(primary: Colors.blueAccent),
-                dialogBackgroundColor: const Color(0xff1E1E2E),
-              ),
-              child: child!,
-            );
-          },
-        );
-        if (pickedDate != null) {
-          controller.birthdate.value = pickedDate;
-        }
-      },
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          _dateBox(day.toString()),
-          _dateBox(month),
-          _dateBox(year.toString()),
-        ],
-      ),
-    );
-  }
-
-  Widget _dateBox(String text) {
-    return Container(
-      padding: const EdgeInsets.all(12),
-      decoration: BoxDecoration(
-        color: const Color(0xff1E1E2E),
-        borderRadius: BorderRadius.circular(10),
-      ),
-      child: Text(text, style: const TextStyle(color: Colors.white)),
     );
   }
 }

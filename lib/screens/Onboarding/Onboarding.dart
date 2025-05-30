@@ -1,4 +1,4 @@
-import 'imports.dart';
+import 'onimports.dart';
 
 class Onboarding extends StatefulWidget {
   const Onboarding({super.key});

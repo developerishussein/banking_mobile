@@ -1,33 +1,14 @@
-import 'imports.dart';
-
+import 'proimports.dart';
 class ProfilePage extends StatelessWidget {
   final controller = Get.put(ProfileController());
+  @override
+  ProfilePage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Mycolors.backgroundColor,
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        title: Text('Profile', style: TextStyle(color: Colors.white)),
-        centerTitle: true,
-        leading: IconButton(
-          color: Colors.white,
-          onPressed: () {
-            Get.back();
-          },
-          icon: Icon(Icons.arrow_back_ios),
-        ),
-        actions: [
-          IconButton(
-            color: Colors.white,
-            onPressed: () {},
-            icon: Icon(Icons.person_outline),
-          ),
-          SizedBox(width: 16),
-        ],
-        elevation: 0,
-      ),
+      appBar: MyAppbar(),
       body: RefreshIndicator(
         color: Colors.white,
         backgroundColor: Colors.black,
@@ -36,7 +17,6 @@ class ProfilePage extends StatelessWidget {
         },
         child: Obx(() {
           final imageBase64 = controller.imageBase64.value;
-
           return SingleChildScrollView(
             physics: AlwaysScrollableScrollPhysics(),
             padding: const EdgeInsets.all(16),
@@ -57,10 +37,9 @@ class ProfilePage extends StatelessWidget {
                 ),
                 Text('Senior Designer', style: TextStyle(color: Colors.grey)),
                 SizedBox(height: 20),
-
                 /// Card 1: Personal & Payment
-                _buildSectionCard([
-                  _buildListTile(
+                buildSectionCard([
+                  buildListTile(
                     Icons.person_outline,
                     "Personal Information",
                     () {
@@ -72,13 +51,12 @@ class ProfilePage extends StatelessWidget {
                       }
                     },
                   ),
-
-                  _buildListTile(
+                  buildListTile(
                     Icons.credit_card,
                     "Payment Preferences",
                     () {},
                   ),
-                  _buildListTile(
+                  buildListTile(
                     Icons.account_balance_wallet_outlined,
                     "Banks and Cards",
                     () {
@@ -86,85 +64,32 @@ class ProfilePage extends StatelessWidget {
                     },
                   ),
                 ]),
-
                 SizedBox(height: 12),
-
                 /// Card 2: Notifications & Messages
-                _buildSectionCard([
-                  _buildListTileWithBadge(
+                buildSectionCard([
+                  buildListTileWithBadge(
                     Icons.notifications_none,
                     "Notifications",
                     2,
                     () {},
                   ),
-                  _buildListTile(
+                  buildListTile(
                     Icons.message_outlined,
                     "Message Center",
                     () {},
                   ),
                 ]),
-
                 SizedBox(height: 12),
-
                 /// Card 3: Address & Settings
-                _buildSectionCard([
-                  _buildListTile(Icons.location_on_outlined, "Address", () {}),
-                  _buildListTile(Icons.settings_outlined, "Settings", () {}),
+                buildSectionCard([
+                  buildListTile(Icons.location_on_outlined, "Address", () {}),
+                  buildListTile(Icons.settings_outlined, "Settings", () {}),
                 ]),
               ],
             ),
           );
         }),
       ),
-    );
-  }
-
-  Widget _buildSectionCard(List<Widget> tiles) {
-    return Card(
-      color: Color(0xFF1E1E2D),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-      child: Column(children: tiles),
-    );
-  }
-
-  Widget _buildListTile(IconData icon, String title, VoidCallback onTap) {
-    return ListTile(
-      leading: Icon(icon, color: Colors.white),
-      title: Text(title, style: TextStyle(color: Colors.white)),
-      trailing: Icon(Icons.arrow_forward_ios, color: Colors.white, size: 16),
-      onTap: onTap,
-    );
-  }
-
-  Widget _buildListTileWithBadge(
-    IconData icon,
-    String title,
-    int badgeCount,
-    VoidCallback onTap,
-  ) {
-    return ListTile(
-      leading: Icon(icon, color: Colors.white),
-      title: Text(title, style: TextStyle(color: Colors.white)),
-      trailing: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          if (badgeCount > 0)
-            Container(
-              padding: EdgeInsets.all(6),
-              decoration: BoxDecoration(
-                color: Colors.red,
-                shape: BoxShape.circle,
-              ),
-              child: Text(
-                '$badgeCount',
-                style: TextStyle(color: Colors.white, fontSize: 12),
-              ),
-            ),
-          SizedBox(width: 8),
-          Icon(Icons.arrow_forward_ios, color: Colors.white, size: 16),
-        ],
-      ),
-      onTap: onTap,
     );
   }
 }

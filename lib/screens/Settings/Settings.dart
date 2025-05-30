@@ -1,5 +1,4 @@
-
-import 'imports.dart';
+import 'simports.dart';
 class Settings extends StatefulWidget {
   const Settings({super.key});
 

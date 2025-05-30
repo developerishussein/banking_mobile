@@ -1,12 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-
-import '../screens/Home/home_page.dart';
-import '../screens/My-Cards/Mycards.dart';
-import '../screens/Statistics/Statistics_page.dart';
-import '../screens/Settings/Settings.dart';
-import 'navigation_controller.dart';
-
+import 'imports.dart';
 class Mynv extends StatelessWidget {
   const Mynv({super.key});
 

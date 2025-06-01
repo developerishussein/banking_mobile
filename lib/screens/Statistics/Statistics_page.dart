@@ -1,4 +1,5 @@
-import'imports.dart';
+import 'imports.dart';
+
 class Statistics extends StatefulWidget {
   const Statistics({super.key});
 
@@ -49,7 +50,7 @@ class _StatisticsState extends State<Statistics> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Mycolors.backgroundColor,
-      appBar:MyAppbar(),
+      appBar: MyAppbar(),
       body:
           isLoading
               ? const Center(child: CircularProgressIndicator())
